@@ -9,11 +9,38 @@ $Body: "Open Sans", sans-serif;
 
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.background-desktop {
+  display: block;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.background-mobile {
+  display: none;
+  width: 100%;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
 }
 
 header,
 main {
   padding: 50px;
+}
+
+.header {
+  margin-bottom: 150px;
 }
 
 .header-navigation {
@@ -67,7 +94,7 @@ main {
 .content-image,
 .main-image {
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -94,7 +121,8 @@ main {
 }
 
 .main {
-  margin-top: 300px;
+  background-color: $Light-Grayish-Blue;
+  margin-top: 0px;
 }
 
 .content .underline {
@@ -181,7 +209,6 @@ footer {
 }
 
 .footer-satu {
-  margin-top: 80px;
   background-color: $Desaturated-Blue;
   display: flex;
   justify-content: space-between;
@@ -336,7 +363,6 @@ footer {
   .main {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
 
     .content {
       text-align: center;

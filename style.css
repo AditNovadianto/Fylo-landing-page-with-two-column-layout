@@ -1,10 +1,41 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.background-desktop {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .background-desktop {
+    display: none;
+  }
+}
+
+.background-mobile {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .background-mobile {
+    display: block;
+  }
 }
 
 header,
 main {
   padding: 50px;
+}
+
+.header {
+  margin-bottom: 150px;
 }
 
 .header-navigation {
@@ -68,7 +99,7 @@ main {
 
 .content-image img,
 .main-image img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .sign-in input {
@@ -94,7 +125,8 @@ main {
 }
 
 .main {
-  margin-top: 300px;
+  background-color: #f6f6fe;
+  margin-top: 0px;
 }
 
 .content .underline {
@@ -194,7 +226,6 @@ footer {
 }
 
 .footer-satu {
-  margin-top: 80px;
   background-color: #585989;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,7 +404,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 50px;
   }
   .header-main .content,
   .main .content {
