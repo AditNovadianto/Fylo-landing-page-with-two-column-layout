@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+}
+
+header,
+main {
+  padding: 50px;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-navigation li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-navigation li a {
+  text-decoration: none;
+  color: #070439;
+}
+
+.header-main,
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  font-family: "Raleway", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #070439;
+}
+
+.header-main .content,
+.main .content {
+  width: 90%;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.header-main .content h1,
+.main .content h1 {
+  font-size: 35px;
+}
+
+.header-main .content p,
+.main .content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header-main .content p.bold,
+.main .content p.bold {
+  -webkit-transform: scale(0.95) translateX(-15px);
+          transform: scale(0.95) translateX(-15px);
+}
+
+.content-image img,
+.main-image img {
+  width: 100%;
+}
+
+.sign-in input {
+  padding: 10px 10px;
+  width: 250px;
+}
+
+.sign-in button {
+  padding: 12px 60px;
+  background-color: #3065f8;
+  color: #f6f6fe;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sign-in button:active {
+  -webkit-box-shadow: inset 0px -5px 50px rgba(246, 246, 254, 0.5);
+          box-shadow: inset 0px -5px 50px rgba(246, 246, 254, 0.5);
+}
+
+.main {
+  margin-top: 300px;
+}
+
+.content .underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3c9f8f;
+  border-bottom: 1px solid #3c9f8f;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.content .underline p {
+  margin-bottom: 5px;
+  margin-top: -3px;
+}
+
+.content .underline svg {
+  margin-left: 5px;
+  margin-top: -5px;
+  fill: #3c9f8f;
+}
+
+.content .underline svg path {
+  fill: #f6f6fe;
+}
+
+.underline:hover {
+  cursor: pointer;
+  color: cyan;
+  border-bottom: 1px solid cyan;
+}
+
+.underline:hover svg {
+  fill: cyan;
+}
+
+.quotes {
+  width: 300px;
+  font-weight: bold;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  font-family: "Open Sans", sans-serif;
+}
+
+.quotes img {
+  margin-top: 50px;
+}
+
+.quotes p {
+  letter-spacing: 1px;
+}
+
+.avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.avatar .avatar-image img {
+  width: 35px;
+  border-radius: 50%;
+  margin-top: 0px;
+  background-size: cover;
+}
+
+.avatar .avatar-profile {
+  margin-left: 10px;
+}
+
+.avatar .avatar-profile h1 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.avatar .avatar-profile p {
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+footer {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-satu {
+  margin-top: 80px;
+  background-color: #585989;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-satu .access {
+  width: 450px;
+}
+
+.footer-satu .access h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #f6f6fe;
+}
+
+.footer-satu .access p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #f6f6fe;
+}
+
+.footer-satu .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.footer-satu .register input {
+  padding: 10px;
+  width: 350px;
+  border-radius: 3px;
+  border: none;
+}
+
+.footer-satu .register button {
+  margin-top: 10px;
+  background-color: #3065f8;
+  color: #f6f6fe;
+  padding: 10px;
+  width: 180px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-satu .register button:active {
+  -webkit-box-shadow: inset 0px -5px 50px rgba(246, 246, 254, 0.5);
+          box-shadow: inset 0px -5px 50px rgba(246, 246, 254, 0.5);
+}
+
+.footer-dua {
+  background-color: #070439;
+}
+
+.footer-dua .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-dua .phone img {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-dua .phone p {
+  color: #f6f6fe;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.footer-dua .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10px;
+}
+
+.footer-dua .email img {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-dua .email p {
+  color: #f6f6fe;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.footer-dua .link-fylo {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footer-dua .link-fylo ul {
+  list-style: none;
+}
+
+.footer-dua .link-fylo ul li {
+  text-decoration: none;
+  color: #f6f6fe;
+  font-family: "Open Sans", sans-serif;
+  line-height: 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer-dua .link-fylo ul li:hover {
+  color: #9d9de6;
+}
+
+.application {
+  margin-top: 70px;
+}
+
+.application ion-icon {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 50%;
+  border: 1px solid #f6f6fe;
+  color: #f6f6fe;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.application ion-icon:hover {
+  color: #6161c0;
+  border: 1px solid #6161c0;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header-navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-navigation img {
+    width: 120px;
+  }
+  .contact-navigation li {
+    margin-left: 10px;
+  }
+  .header-main,
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .header-main .content,
+  .main .content {
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    margin-left: 20px;
+  }
+  .header-main .content p.bold,
+  .main .content p.bold {
+    margin: 0;
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-main .content .sign-in button,
+  .main .content .sign-in button {
+    margin-top: 20px;
+    margin-left: -2px;
+    width: 275px;
+  }
+  .header-main .content .underline,
+  .main .content .underline {
+    margin: auto;
+  }
+  .header-main .quotes,
+  .main .quotes {
+    text-align: start;
+  }
+  .header-main .content-image,
+  .main .content-image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-satu {
+    padding: 30px;
+    display: block;
+    text-align: center;
+  }
+  .footer-satu .access {
+    margin: auto;
+    width: 400px;
+  }
+  .footer-satu .access h1 {
+    font-size: 20px;
+  }
+  .footer-satu .register input {
+    width: 250px;
+    margin: auto;
+  }
+  .footer-satu .register button {
+    width: 270px;
+    margin: 10px auto;
+  }
+  .footer-dua {
+    display: block;
+    padding: 50px;
+  }
+  .footer-dua .link-fylo {
+    display: block;
+    margin-left: -40px;
+  }
+  .application {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

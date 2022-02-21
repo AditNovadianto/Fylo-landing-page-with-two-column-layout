@@ -1,0 +1,418 @@
+$Very-Dark-Blue: hsl(243, 87%, 12%);
+$Desaturated-Blue: hsl(238, 22%, 44%);
+$Bright-Blue: hsl(224, 93%, 58%);
+$Moderate-Cyan: hsl(170, 45%, 43%);
+$Light-Grayish-Blue: hsl(240, 75%, 98%);
+$Light-Gray: hsl(0, 0%, 75%);
+$Headings: "Raleway", sans-serif;
+$Body: "Open Sans", sans-serif;
+
+body {
+  margin: 0;
+}
+
+header,
+main {
+  padding: 50px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-navigation {
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    font-family: $Headings;
+
+    a {
+      text-decoration: none;
+      color: $Very-Dark-Blue;
+    }
+  }
+}
+
+.header-main,
+.main {
+  display: flex;
+  margin-top: 100px;
+  font-family: $Headings;
+  justify-content: space-between;
+  color: $Very-Dark-Blue;
+
+  .content {
+    width: 90%;
+    margin-right: 50px;
+    margin-top: 50px;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    p {
+      font-family: $Body;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    p.bold {
+      transform: scale(0.95) translateX(-15px);
+    }
+  }
+}
+
+.content-image,
+.main-image {
+  img {
+    width: 100%;
+  }
+}
+
+.sign-in {
+  input {
+    padding: 10px 10px;
+    width: 250px;
+  }
+
+  button {
+    padding: 12px 60px;
+    background-color: $Bright-Blue;
+    color: $Light-Grayish-Blue;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  button:active {
+    box-shadow: inset 0px -5px 50px hsla(240, 75%, 98%, 0.5);
+  }
+}
+
+.main {
+  margin-top: 300px;
+}
+
+.content .underline {
+  display: flex;
+  align-items: center;
+  color: $Moderate-Cyan;
+  border-bottom: 1px solid $Moderate-Cyan;
+  max-width: max-content;
+
+  p {
+    margin-bottom: 5px;
+    margin-top: -3px;
+  }
+
+  svg {
+    margin-left: 5px;
+    margin-top: -5px;
+    fill: $Moderate-Cyan;
+  }
+
+  svg path {
+    fill: $Light-Grayish-Blue;
+  }
+}
+
+.underline:hover {
+  cursor: pointer;
+  color: cyan;
+  border-bottom: 1px solid cyan;
+
+  svg {
+    fill: cyan;
+  }
+}
+
+.quotes {
+  width: 300px;
+  font-weight: bold;
+  transform: scale(0.8);
+  font-family: $Body;
+
+  img {
+    margin-top: 50px;
+  }
+
+  p {
+    letter-spacing: 1px;
+  }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+
+  .avatar-image {
+    img {
+      width: 35px;
+      border-radius: 50%;
+      margin-top: 0px;
+      background-size: cover;
+    }
+  }
+
+  .avatar-profile {
+    margin-left: 10px;
+
+    h1 {
+      font-size: 15px;
+      font-weight: bold;
+      font-family: $Headings;
+    }
+
+    p {
+      font-size: 10px;
+      margin-top: -10px;
+    }
+  }
+}
+
+footer {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-satu {
+  margin-top: 80px;
+  background-color: $Desaturated-Blue;
+  display: flex;
+  justify-content: space-between;
+
+  .access {
+    width: 450px;
+
+    h1 {
+      font-family: $Body;
+      color: $Light-Grayish-Blue;
+    }
+
+    p {
+      font-family: $Body;
+      font-size: 13px;
+      color: $Light-Grayish-Blue;
+    }
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    input {
+      padding: 10px;
+      width: 350px;
+      border-radius: 3px;
+      border: none;
+    }
+
+    button {
+      margin-top: 10px;
+      background-color: $Bright-Blue;
+      color: $Light-Grayish-Blue;
+      padding: 10px;
+      width: 180px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    button:active {
+      box-shadow: inset 0px -5px 50px hsla(240, 75%, 98%, 0.5);
+    }
+  }
+}
+
+.footer-dua {
+  background-color: $Very-Dark-Blue;
+
+  .phone {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+
+    p {
+      color: $Light-Grayish-Blue;
+      font-family: $Body;
+      font-size: 13px;
+      margin-left: 15px;
+    }
+  }
+
+  .email {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+
+    p {
+      color: $Light-Grayish-Blue;
+      font-family: $Body;
+      font-size: 13px;
+      margin-left: 15px;
+    }
+  }
+
+  .link-fylo {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    ul {
+      list-style: none;
+
+      li {
+        text-decoration: none;
+        color: $Light-Grayish-Blue;
+        font-family: $Body;
+        line-height: 40px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+
+      li:hover {
+        color: rgb(157, 157, 230);
+      }
+    }
+  }
+}
+
+.application {
+  margin-top: 70px;
+
+  ion-icon {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid $Light-Grayish-Blue;
+    color: $Light-Grayish-Blue;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  ion-icon:hover {
+    color: rgb(97, 97, 192);
+    border: 1px solid rgb(97, 97, 192);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-navigation {
+    align-items: center;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .contact-navigation {
+    li {
+      margin-left: 10px;
+    }
+  }
+
+  .header-main,
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .content {
+      text-align: center;
+      order: 2;
+      margin: 0;
+      margin-left: 20px;
+
+      p.bold {
+        margin: 0;
+        margin-left: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .sign-in {
+        button {
+          margin-top: 20px;
+          margin-left: -2px;
+          width: 275px;
+        }
+      }
+
+      .underline {
+        margin: auto;
+      }
+    }
+
+    .quotes {
+      text-align: start;
+    }
+
+    .content-image {
+      order: 1;
+    }
+  }
+
+  .footer-satu {
+    padding: 30px;
+    display: block;
+    text-align: center;
+
+    .access {
+      margin: auto;
+      width: 400px;
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    .register {
+      input {
+        width: 250px;
+        margin: auto;
+      }
+
+      button {
+        width: 270px;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .footer-dua {
+    display: block;
+    padding: 50px;
+
+    .link-fylo {
+      display: block;
+      margin-left: -40px;
+    }
+  }
+
+  .application {
+    width: max-content;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
